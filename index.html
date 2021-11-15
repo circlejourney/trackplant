@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			.table {
+				font-family: Courier New, monospace;
+			}
+			
+			.table-row {
+				display: flex;
+				width: 100%;
+				flex-direction: row;
+				justify-content: flex-start;
+			}
+			
+			.table-row.table-header .table-cell {
+				background-color: CornflowerBlue;
+				color: white;
+				font-weight: bold;
+			}
+			
+			.table-row:nth-child(odd):not(.table-header) .table-cell:nth-child(odd), .table-row:nth-child(even):not(.table-header) .table-cell:nth-child(even) {
+				background-color: #eee;
+			}
+			
+			.table-cell {
+				flex-grow: 1;
+				flex-basis: 0px;
+				margin: 2px;
+				padding: 10px;
+				word-break: break-word;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="table">
+			<div class="table-row table-header">
+				<div class="table-cell">
+					Name
+				</div>
+				<div class="table-cell">
+					Species
+				</div>
+				<div class="table-cell">
+					Water interval
+				</div>
+				<div class="table-cell">
+					Last watered
+				</div>
+				<div class="table-cell">
+					Next water
+				</div>
+			</div>
+			
+			<div class="table-row">
+				<div class="table-cell">
+					Cell 1
+				</div>
+				<div class="table-cell">
+					Cell 2
+				</div>
+				<div class="table-cell">
+					Cell 3
+				</div>
+				<div class="table-cell">
+					Cell 4
+				</div>
+				<div class="table-cell">
+					Cell 4
+				</div>
+			</div>
+			
+			<div class="table-row">
+				<div class="table-cell">
+					Cell 1
+				</div>
+				<div class="table-cell">
+					Cell 2
+				</div>
+				<div class="table-cell">
+					Cell 3
+				</div>
+				<div class="table-cell">
+					Cell 4
+				</div>
+				<div class="table-cell">
+					Cell 4
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
